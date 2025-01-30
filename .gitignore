@@ -1,2 +1,4 @@
-# temp files
-temp*
+# files with name temp
+temp.*
+
+README
