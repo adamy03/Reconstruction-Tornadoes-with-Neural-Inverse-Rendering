@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaussian Splatting — Comparison Videos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #111;
+            margin: 0;
+            padding: 0;
+        }
+
+        .authors span {
+            margin: 0 1.5em;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2em;
+        }
+
+        h1.publication-title {
+            font-family: 'Jost', sans-serif;
+            font-weight: 800;
+            text-align: center;
+            font-size: 2.9em;
+            margin-bottom: 0.2em;
+        }
+
+        h2, h3 {
+            font-family: 'Jost', sans-serif;
+            font-size: 2.0em;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .authors {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+        }
+
+        .section {
+            margin-top: 2em;
+        }
+
+        .video-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2em;
+        }
+
+        .video-wrapper {
+            flex: 1 1 48%;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            background-color: #000;
+        }
+
+        .video-wrapper p {
+            text-align: center;
+            margin-top: 0.5em;
+            font-size: 0.95em;
+        }
+
+        .abstract, .method {
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #2c6bed;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .video-wrapper {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="publication-title">Modeling Tornadoes with Neural Inverse Rendering</h1>
+        <div class="authors">
+        <p class="authors">
+            <span>Adam Yang</span>
+            <span>Nadula Kadawedduwa</span>
+            <span>Tianfu Wang</span>
+            <span>Maria Molina</span>
+            <span>Christopher Metzler</span><br>
+            <em>Intelligent Sensing Lab, University of Maryland</em>
+        </p>
+        </div>
+
+        <div class="section abstract">
+            <h2>Abstract</h2>
+            <p>
+            Tornadoes are among the most destructive weather phenomena and yet not fully understood. Enhancing knowledge of such events will lead to improved prediction and damage mitigation protocols. In conjunction with advances in computer vision, the structure of tornadoes can be better understood through 3D modeling. In this work, we propose a semi-automated framework for generating 3D models of tornadoes, specifically, using advances inverse differentiable rendering and novel view synthesis (NVS). We demonstrate one can effective reconstruct a tornado using an array of cameras. We validate this pipeline in the lab using a tornado machine. 
+            </p>
+        </div>
+    <div class="section">
+            <h2>Video Results</h2>
+            <div class="video-row">
+                <div class="video-wrapper">
+                    <video controls preload="metadata">
+                        <source src="assets/flythrough.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <video controls preload="metadata">
+                        <source src="assets/wobble.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="section method">
+            <h2>Paper Links</h2>
+             <p>
+        <a href="https://github.com/adamy03/3Dtornadoes" target="_blank">GitHub Repository</a>
+        </p>
+        </div>
+    </div>
+</body>
+</html>
