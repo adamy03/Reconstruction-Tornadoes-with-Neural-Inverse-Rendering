@@ -1,4 +1,4 @@
-# Repo for 3D tornado reconstruction
+# Repo for Reconstruction Tornadoes with Neural Inverse Rendering
 ## How to use colmap editor
 Load database.db and images folder for initial colmap feature matches.
 
